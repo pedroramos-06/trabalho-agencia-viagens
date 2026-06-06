@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+:root {
+    /* Cores */
+    /*Como Utilizar: var(--nome) */
+    --primaria: #0486BA;
+    --primaria2: #77BDDB;
+    --neutra: #EFEFEF;
+    --neutra2: #AFAEAE;
+    --container: #E9F3FC;
+    --container2: #B9DCEC;
+    --footer: #174662;
+
+    /* Texto */
+    /* Como Utilizar: font: var(--nome) */
+    --botao: 700 20px 'Inter', sans-serif;
+    --label: 500 18px 'Inter', sans-serif;
+    --pequeno: 400 12px 'Inter', sans-serif;
+}
+
+
+
+/* Geral */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-inline: 200px;
+        padding-block: 20px;
+        gap: 26px;
+    }
+    
+    img {
+        display: block;
+    }
+
+    .banner {
+        height: 450px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-inline: -200px;
+        margin-top: -20px;
+    }
+
+
+
+/*Texto*/
+    h1 {
+        font-size: 48px;
+        font-weight: 900;
+        color: var(--footer);
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--footer);
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    label {
+        font: var(--label);
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+
+/* Footer */
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 165px;
+        padding-inline: 50px;
+        padding-block: 10px;
+        background-color: var(--footer);
+        height: 144px;
+    }
+    footer div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer p {
+        font: var(--label);
+        color: white;
+    }
+    footer a {
+        font: var(--pequeno);
+    }
+    footer img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .icone-texto {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 6px;
+    }
+
+
+
+/* NavBar */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 40px;
+        padding-block: 10px;
+        background-color: var(--primaria);
+        height: 76px;
+    }
+    nav div {
+        display: flex;
+        align-items: center;
+    }
+    nav a {
+        font: var(--label);
+    }
+
+    .nav-logo {
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 60px;
+    }
+
+
+
+/* Elementos */
+    button {
+        background-color: var(--primaria);
+        font: var(--botao);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        width: 217px;
+        height: 48px;
+        cursor: pointer;
+    }
+    button:active {
+        opacity: 0.8;
+        transform: scale(0.95);
+    }
+
+    .campo {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    input, select, textarea {
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid var(--neutra2);
+        font-size: 16px;
+        font-weight: 400;
+        padding-inline: 14px;
+    }
+    select {
+        padding-inline: 10px;
+    }
+    textarea {
+        height: 200px;
+        width: 525px;
+        resize: none;
+        padding-block: 7px;
+    }
+    input:focus, select:focus, textarea:focus {
+        outline: 1px solid var(--primaria);
+    }
