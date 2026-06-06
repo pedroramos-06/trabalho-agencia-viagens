@@ -48,7 +48,7 @@
     }
 
     .banner {
-        height: 571px;
+        height: 450px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
         margin-inline: -200px;
@@ -116,6 +116,10 @@
     }
     footer a {
         font: var(--pequeno);
+    }
+    footer img {
+        width: 15px;
+        height: 15px;
     }
 
     .icone-texto {
