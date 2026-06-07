@@ -1,0 +1,146 @@
+/* Barra de serviços oferecidos na viagem */
+.servicos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.barra-servicos {
+    display: flex;
+    gap: 30px;
+    border-radius: 24px;
+    background-color: var(--primaria2);
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 82px; 
+    padding: 5px 40px; 
+}
+
+.barra-servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 1 auto;
+}
+
+.barra-servicos h3 {
+    white-space: nowrap;
+}
+
+.barra-servicos img {
+    width: 29px;
+    height: 29px;
+    object-fit: contain;
+}
+
+/* Cronograma */
+.cronograma {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 70px;
+}
+
+.cronograma-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* Elementos da timeline do cronograma */
+.cronograma-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-ponto {
+    width: 24px;
+    height: 24px;
+    background-color: var(--primaria2);
+    border-radius: 50%;
+}
+
+.timeline-linha {
+    width: 7px;
+    height: 110px;
+    background-color: var(--neutra2);
+    position: absolute;
+    top: 30px;
+    border-radius: 20px;
+}
+
+/* Cards pocotes de viagens */
+.pacotes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--neutra2);
+    border-radius: 38px;
+    overflow: hidden; 
+    padding: 0;
+    width: 300px;
+}
+
+.card-header {
+    background-color: var(--primaria2);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-header h2 {
+    color: black;
+}
+
+.card-content {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Galeria de fotos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    auto-rows: 250px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/* Alternar fotos grandes e pequenas */
+.galeria img:nth-child(3n + 1) {
+    grid-row: span 2;
+}
+
+.galeria img:nth-child(3n) {
+    grid-row: span 2;
+}
+
+video {
+    width: 100%;
+    max-height: 450px;
+    height: auto;
+    border-radius: 25px;
+}
