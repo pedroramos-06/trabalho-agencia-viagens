@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados da Viagem</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/reserva.css">
+    <link rel="icon" href="../../assets/img/logo-primaria.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html"><img src="../../assets/img/logo.png" alt="Logo" width="60px"></a>
+                <a href="index.html"><img src="../../assets/img/logo-nome.png" alt="Logo Nome" width="189px"></a>
+            </div>
+
+            <div class="nav-links">
+                <a href="../index.html">Destinos</a>
+                <a href="dados-viagem.html">Fazer Reserva</a>
+                <a href="../contato.html">Contato</a>
+                <a href="../sobre.html">Sobre</a>
+                <a href="../minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="progresso-container">
+            <div class="progresso-box" style="background-color: var(--container2);">
+                <div class="progresso-circulo"><p>1</p></div>
+                <p>Dados da Viagem</p>
+            </div>
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>2</p></div>
+                <p>Dados Pessoais</p>
+            </div>
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>3</p></div>
+                <p>Pagamento</p>
+            </div>
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>4</p></div>
+                <p>Confirmar</p>
+            </div>
+
+            <div class="progresso-linha" style="left: 134px;"></div>
+            <div class="progresso-linha" style="left: 378px;"></div>
+            <div class="progresso-linha" style="left: 622px;"></div>
+        </div>
+
+        <div class="reserva-content">
+            <div class="reserva-form">
+                <h2>Dados da Viagem</h2>
+
+                <div class="campo">
+                    <label for="destino">Destino</label>
+                    <select id="destino" style="width: 265px;">
+                        <option value="italia">Italia</option>
+                        <option value="italia2">Italia2</option>
+                        <option value="italia3">Italia3</option>
+                        <option value="italia4">Italia4</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="pacote">Pacote</label>
+                    <select id="pacote" style="width: 200px;">
+                        <option value="">Selecione</option>
+                        <option value="1">Básico</option>
+                        <option value="2">Conforto</option>
+                        <option value="3">Premium</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="quantidade-pessoas">Quantidade de Pessoas</label>
+                    <input id="quantidade-pessoas" type="number" min="1" value="1" style="width: 200px;">
+                </div>
+
+                <div class="campo">
+                    <label for="data-ida">Data de Ida</label>
+                    <input id="data-ida" type="date" style="width: 200px;">
+                </div>
+
+
+                <div class="reserva-botoes">
+                    <button onclick="history.back()" style="background-color: var(--neutra2);">Voltar</button>
+                    <button onclick="window.location.href='dados-pessoais.html';">Avançar</button>
+                </div>
+            </div>
+
+            <div class="pacotes-container">
+                <div class="pacotes-box" style="background-color: var(--primaria2); border-bottom: 1px solid var(--neutra2);">
+                    <p>Pacote</p>
+                    <p>Hospedagem</p>
+                    <p>Preço<br>(p/ pessoa)</p>
+                </div>
+
+                <div class="pacotes-box">
+                    <p>Básico</p>
+                    <p style="font-weight: 500;">Albergue</p>
+                    <p style="font-weight: 500;">R$3.500,00</p>
+                </div>
+
+                <div class="pacotes-box" style="background-color: var(--container2);">
+                    <p>Conforto</p>
+                    <p style="font-weight: 500;">Hotel 3<br>estrelas</p>
+                    <p style="font-weight: 500;">R$5.000,00</p>
+                </div>
+
+                <div class="pacotes-box">
+                    <p>Premium</p>
+                    <p style="font-weight: 500;">Resort</p>
+                    <p style="font-weight: 500;">R$7.500,00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Contato</p>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/telefone.png" width="15px" alt="Icone Telefone">
+                <a href="tel:+553340028922">(33) 4002-8922</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/email.png" width="15px" alt="Icone Email">
+                <a href="mailto:destinocerto@gmail.com">destinocerto@gmail.com</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/web.png" width="15px" alt="Icone Web">
+                <a href="../contato.html">destinocerto.com</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Redes Sociais</p>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/facebook.png" width="15px" alt="Icone Facebook">
+                <a href="https://www.facebook.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/instagram.png" width="15px" alt="Icone Instagram">
+                <a href="https://www.instagram.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/youtube.png" width="15px" alt="Icone Youtube">
+                <a href="https://www.youtube.com/@destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Mapa do Site</p>
+            <div>
+                <a href="../index.html">Destinos</a>
+            </div>
+            <div>
+                <a href="dados-viagem.html">Fazer Reserva</a>
+            </div>
+            <div>
+                <a href="../minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const hoje = new Date().toISOString().split('T')[0];
+        document.getElementById('data-ida').min = hoje;
+    </script>
+</body>
+</html>

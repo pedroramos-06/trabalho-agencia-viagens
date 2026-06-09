@@ -1,0 +1,133 @@
+/*Geral*/
+    main {
+        padding-inline: 300px;
+        padding-bottom: 40px;
+        align-items: center;
+    }
+
+    .reserva-content {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .reserva-form {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: 600px;
+    }
+
+    .reserva-botoes {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+
+
+
+/*Progresso*/
+    .progresso-container {
+        background-color: var(--container);
+        border-radius: 30px;
+        width: 964px;
+        height: 122px;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        padding-inline: 20px;
+        padding-block: 15px;
+    }
+    .progresso-container p {
+        font: var(--label);
+    }
+
+    .progresso-box {
+        background-color: none;
+        width: 192px;
+        height: 92px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .progresso-circulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 37px;
+        width: 37px;
+        border: 2px solid black;
+        border-radius: 32.33px;
+    }
+
+    .progresso-linha {
+        position: absolute;
+        top: 49px;
+        height: 2px;
+        background-color: black;
+        width: 208px;
+    }
+
+
+
+/*Pacotes*/
+    .pacotes-container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 480px;
+        height: 360px;
+        border-radius: 38px;
+        border: 1px solid var(--neutra2);
+        background-color: var(--container);
+    }
+
+    .pacotes-box {
+        display: grid;
+        height: 90px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .pacotes-box p {
+        text-align: center;
+        font: var(--botao);
+    }
+
+
+
+/*Resumo*/
+    .resumo-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 529px;
+        align-self: flex-start;
+        padding-inline: 45px;
+        padding-block: 20px;
+        border-radius: 38px;
+        border: 1px solid var(--neutra2);
+        background-color: var(--neutra);
+    }
+
+    .resumo-box-imagem {
+        display: flex;
+        height: 159px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .resumo-box-total {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .resumo-box-imagem div, .resumo-box-total div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
