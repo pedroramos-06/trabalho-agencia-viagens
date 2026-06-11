@@ -7,6 +7,43 @@
     font-weight: 700;
 }
 
+h2 {
+    scroll-margin-top: 150px;
+}
+
+.secoes-container {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 50px;
+    background-color: var(--primaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.secoes-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.secoes-container div img {
+    width: 25px;
+    height: 25px;
+}
+
+.secoes-container.visible {
+    opacity: 0.9;
+    pointer-events: auto;
+}
+
 /* Barra de serviços oferecidos na viagem */
 .servicos-container {
     display: flex;
