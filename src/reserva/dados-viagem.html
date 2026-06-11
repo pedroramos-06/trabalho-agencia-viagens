@@ -50,12 +50,12 @@
         </div>
 
         <div class="reserva-content">
-            <div class="reserva-form">
+            <form class="reserva-form" onsubmit="avancar(event)">
                 <h2>Dados da Viagem</h2>
 
                 <div class="campo">
                     <label for="destino">Destino</label>
-                    <select id="destino" style="width: 265px;">
+                    <select required id="destino" style="width: 265px;">
                         <option value="italia">Italia</option>
                         <option value="italia2">Italia2</option>
                         <option value="italia3">Italia3</option>
@@ -65,7 +65,7 @@
 
                 <div class="campo">
                     <label for="pacote">Pacote</label>
-                    <select id="pacote" style="width: 200px;">
+                    <select required id="pacote" style="width: 200px;">
                         <option value="">Selecione</option>
                         <option value="1">Básico</option>
                         <option value="2">Conforto</option>
@@ -75,20 +75,20 @@
 
                 <div class="campo">
                     <label for="quantidade-pessoas">Quantidade de Pessoas</label>
-                    <input id="quantidade-pessoas" type="number" min="1" value="1" style="width: 200px;">
+                    <input required id="quantidade-pessoas" type="number" min="1" value="1" style="width: 200px;">
                 </div>
 
                 <div class="campo">
                     <label for="data-ida">Data de Ida</label>
-                    <input id="data-ida" type="date" style="width: 200px;">
+                    <input required id="data-ida" type="date" style="width: 200px;">
                 </div>
 
 
                 <div class="reserva-botoes">
-                    <button onclick="history.back()" style="background-color: var(--neutra2);">Voltar</button>
-                    <button onclick="window.location.href='dados-pessoais.html';">Avançar</button>
+                    <button type="button" onclick="history.back()" style="background-color: var(--neutra2);">Voltar</button>
+                    <button type="submit" onclick="if(event.ctrlKey) this.form.noValidate = true /*Pula verificação dos campos*/">Avançar</button>
                 </div>
-            </div>
+            </form>
 
             <div class="pacotes-container">
                 <div class="pacotes-box" style="background-color: var(--primaria2); border-bottom: 1px solid var(--neutra2);">
@@ -164,8 +164,13 @@
         </div>
     </footer>
     <script>
-        const hoje = new Date().toISOString().split('T')[0];
-        document.getElementById('data-ida').min = hoje;
+        function avancar(e) {
+            e.preventDefault();
+            window.location.href="dados-pessoais.html";
+        }
+
+        const hoje = new Date().toISOString().split("T")[0];
+        document.getElementById("data-ida").min = hoje;
     </script>
 </body>
 </html>
