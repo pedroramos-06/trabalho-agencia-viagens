@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Pessoais</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/reserva.css">
+    <link rel="icon" href="../../assets/img/logo-primaria.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../../assets/img/logo.png" alt="Logo" width="60px"></a>
+                <a href="../index.html"><img src="../../assets/img/logo-nome.png" alt="Logo Nome" width="189px"></a>
+            </div>
+
+            <div class="nav-links">
+                <a href="../index.html">Destinos</a>
+                <a href="dados-viagem.html">Fazer Reserva</a>
+                <a href="../contato.html">Contato</a>
+                <a href="../sobre.html">Sobre</a>
+                <a href="../minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="progresso-container">
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>1</p></div>
+                <p>Dados da Viagem</p>
+            </div>
+            <div class="progresso-box" style="background-color: var(--container2);">
+                <div class="progresso-circulo"><p>2</p></div>
+                <p>Dados Pessoais</p>
+            </div>
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>3</p></div>
+                <p>Pagamento</p>
+            </div>
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>4</p></div>
+                <p>Confirmar</p>
+            </div>
+
+            <div class="progresso-linha" style="left: 134px;"></div>
+            <div class="progresso-linha" style="left: 378px;"></div>
+            <div class="progresso-linha" style="left: 622px;"></div>
+        </div>
+
+        <div class="reserva-content">
+            <form class="reserva-form" onsubmit="avancar(event)">
+                <h2>Dados do Cliente</h2>
+
+                <div class="campo">
+                    <label for="nome">Nome Completo</label>
+                    <input required id="nome" type="text" placeholder="Nome Completo" style="width: 525px;">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input required id="email" type="email" placeholder="Email" style="width: 525px;">
+                </div>
+
+                <div class="campo">
+                    <label for="cpf">Cpf</label>
+                    <input required id="cpf" type="text" placeholder="Cpf(somente números)" style="width: 300px;">
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input required id="telefone" type="tel" placeholder="Telefone" style="width: 300px;">
+                </div>
+
+                <div class="reserva-botoes">
+                    <button type="button" onclick="history.back()" style="background-color: var(--neutra2);">Voltar</button>
+                    <button type="submit" onclick="if(event.ctrlKey) this.form.noValidate = true">Avançar</button>
+                </div>
+            </form>
+
+            <div class="resumo-container">
+                <h2>Resumo</h2>
+
+                <div class="resumo-box-imagem">
+                    <div>
+                        <p>Destino: Tailândia</p>
+                        <p>Qnt de pessoas: 2 adultos</p>
+                        <p>Pacote:  Premium</p>
+                    </div>
+
+                    <img src="../../assets/img/placeholder.png" alt="Imagem Destino" width="218px">
+                </div>
+
+                <hr>
+
+                <div class="icone-texto" style="justify-content: center; gap: 15px;">
+                    <img src="../../assets/img/icone-calendario.png" alt="Icone Calendario" width="25px">
+                    <p>22 jun de 2026 - 28 de jun de 2026</p>
+                </div>
+
+                <hr>
+
+                <div class="resumo-box-total">
+                    <h3>Total a pagar</h3>
+
+                    <div>
+                        <h3>R$ 8.000,00</h3>
+                        <p>Em até 10x de R$800,00 s/<br>juros no cartão de crédito</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Contato</p>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/telefone.png" width="15px" alt="Icone Telefone">
+                <a href="tel:+553340028922">(33) 4002-8922</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/email.png" width="15px" alt="Icone Email">
+                <a href="mailto:destinocerto@gmail.com">destinocerto@gmail.com</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/web.png" width="15px" alt="Icone Web">
+                <a href="../contato.html">destinocerto.com</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Redes Sociais</p>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/facebook.png" width="15px" alt="Icone Facebook">
+                <a href="https://www.facebook.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/instagram.png" width="15px" alt="Icone Instagram">
+                <a href="https://www.instagram.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/youtube.png" width="15px" alt="Icone Youtube">
+                <a href="https://www.youtube.com/@destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Mapa do Site</p>
+            <div>
+                <a href="../index.html">Destinos</a>
+            </div>
+            <div>
+                <a href="dados-viagem.html">Fazer Reserva</a>
+            </div>
+            <div>
+                <a href="../minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function avancar(e) {
+            e.preventDefault();
+            window.location.href="pagamento.html";
+        }
+
+        document.getElementById("cpf").addEventListener("input", (e) => {
+            const cpf = e.target.value
+                .replace(/\D/g, "")
+                .substring(0, 11)
+                .replace(/(\d{3})(\d)/, "$1.$2")
+                .replace(/(\d{3})(\d)/, "$1.$2")
+                .replace(/(\d{3})(\d{1,2})/, "$1-$2");
+
+            e.target.value = cpf;
+
+            if (cpf.length < 14) {
+                e.target.setCustomValidity("Digite o CPF completo com os 11 números.");
+            } else {
+                e.target.setCustomValidity(""); 
+            }
+        });
+        
+        document.getElementById("telefone").addEventListener("input", (e) => {
+            const telefone = e.target.value
+                .replace(/\D/g, "")
+                .substring(0, 11)
+                .replace(/(\d{2})(\d)/, "($1) $2")
+                .replace(/(\d{5})(\d{1,4})/, "$1-$2");
+
+            e.target.value = telefone;
+
+            if (telefone.length < 15) {
+                e.target.setCustomValidity("Digite o telefone completo com o DDD.");
+            } else {
+                e.target.setCustomValidity(""); 
+            }
+        });
+    </script>
+</body>
+</html>

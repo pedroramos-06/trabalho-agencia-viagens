@@ -110,14 +110,18 @@
     .resumo-container {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        width: 529px;
+        gap: 15px;
+        min-width: 480px;
         align-self: flex-start;
-        padding-inline: 45px;
-        padding-block: 20px;
+        padding-inline: 25px;
+        padding-block: 15px;
         border-radius: 38px;
         border: 1px solid var(--neutra2);
         background-color: var(--neutra);
+    }
+    .resumo-container h2 {
+        line-height: 1;
+        color: black;
     }
 
     .resumo-box-imagem {
