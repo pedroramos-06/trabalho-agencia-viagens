@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/reserva.css">
+    <link rel="icon" href="../../assets/img/logo-primaria.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../../assets/img/logo.png" alt="Logo" width="60px"></a>
+                <a href="../index.html"><img src="../../assets/img/logo-nome.png" alt="Logo Nome" width="189px"></a>
+            </div>
+
+            <div class="nav-links">
+                <a href="../index.html">Destinos</a>
+                <a href="dados-viagem.html">Fazer Reserva</a>
+                <a href="../contato.html">Contato</a>
+                <a href="../sobre.html">Sobre</a>
+                <a href="../minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="progresso-container">
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>1</p></div>
+                <p>Dados da Viagem</p>
+            </div>
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>2</p></div>
+                <p>Dados Pessoais</p>
+            </div>
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>3</p></div>
+                <p>Pagamento</p>
+            </div>
+            <div class="progresso-box" style="background-color: var(--container2);">
+                <div class="progresso-circulo"><p>4</p></div>
+                <p>Confirmar</p>
+            </div>
+
+            <div class="progresso-linha" style="left: 134px;"></div>
+            <div class="progresso-linha" style="left: 378px;"></div>
+            <div class="progresso-linha" style="left: 622px;"></div>
+        </div>
+
+        <div class="reserva-content">
+            <div class="reserva-form">
+                <h2>Confirmar Informações</h2>
+
+                <div class="confirmar-container">
+                    <h3>Viagem</h3>
+                    <p>Destino: Itália</p>
+                    <p>Pacote: Básico</p>
+                    <p>Quantidade de Pessoas: 2</p>
+                    <p>Período: 22/05/2026 -> 28/05/2026 (6 dias)</p>
+
+                    <hr>
+
+                    <h3>Cliente</h3>
+                    <p>Nome: Lorem Ipsum Dolor</p>
+                    <p>Email: Lorem@Ipsum.Dolor</p>
+                    <p>Cpf: ***.456.789-**</p>
+                    <p>Telefone: (33) 12345-6789</p>
+
+                    <hr>
+
+                    <h3>Pagamento</h3>
+                    <p>Titular: Lorem Ipsum Dolor</p>
+                    <p>Cartão: Nubank **** **** **** 4020</p>
+                    <p>Parcelas: 4x R$2.000,00</p>
+                </div>
+
+                <div class="reserva-botoes">
+                    <button onclick="history.back()" style="background-color: var(--neutra2);">Voltar</button>
+                    <button onclick="window.location.href='../minhas-reservas.html';">Confirmar</button>
+                </div>
+            </div>
+            
+            <div class="resumo-container">
+                <h2>Resumo</h2>
+
+                <div class="resumo-box-imagem">
+                    <div>
+                        <p>Destino: Tailândia</p>
+                        <p>Qnt de pessoas: 2 adultos</p>
+                        <p>Pacote:  Premium</p>
+                    </div>
+
+                    <img src="../../assets/img/placeholder.png" alt="Imagem Destino" width="218px">
+                </div>
+
+                <hr>
+
+                <div class="icone-texto" style="justify-content: center; gap: 15px;">
+                    <img src="../../assets/img/icone-calendario.png" alt="Icone Calendario" width="25px">
+                    <p>22 jun de 2026 - 28 de jun de 2026</p>
+                </div>
+
+                <hr>
+
+                <div class="resumo-box-total">
+                    <h3>Total a pagar</h3>
+
+                    <div>
+                        <h3>R$ 8.000,00</h3>
+                        <p>Em até 10x de R$800,00 s/<br>juros no cartão de crédito</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Contato</p>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/telefone.png" width="15px" alt="Icone Telefone">
+                <a href="tel:+553340028922">(33) 4002-8922</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/email.png" width="15px" alt="Icone Email">
+                <a href="mailto:destinocerto@gmail.com">destinocerto@gmail.com</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/web.png" width="15px" alt="Icone Web">
+                <a href="../contato.html">destinocerto.com</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Redes Sociais</p>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/facebook.png" width="15px" alt="Icone Facebook">
+                <a href="https://www.facebook.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/instagram.png" width="15px" alt="Icone Instagram">
+                <a href="https://www.instagram.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/youtube.png" width="15px" alt="Icone Youtube">
+                <a href="https://www.youtube.com/@destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Mapa do Site</p>
+            <div>
+                <a href="../index.html">Destinos</a>
+            </div>
+            <div>
+                <a href="dados-viagem.html">Fazer Reserva</a>
+            </div>
+            <div>
+                <a href="../minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
