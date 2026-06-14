@@ -55,15 +55,15 @@
 
                 <div class="campo">
                     <label for="nome-titular">Nome do Titular</label>
-                    <input required id="nome-titular" type="text" placeholder="Nome Completo" style="width: 400px;">
+                    <input required id="nome-titular" type="text" placeholder="Nome Completo" class="input-grande">
                 </div>
 
                 <div class="campo">
                     <label for="cartao">Número do Cartão</label>
-                    <input required id="cartao" type="text" placeholder="Número do Cartão" style="width: 250px;">
+                    <input required id="cartao" type="text" placeholder="Número do Cartão" class="input-medio">
                 </div>
 
-                <div style="display: flex; gap: 80px;">
+                <div style="display: flex; gap: 60px;">
                     <div class="campo">
                         <label for="mes">Validade</label>
                         <div style="display: flex; gap: 5px;">
@@ -80,7 +80,7 @@
 
                 <div class="campo">
                     <label for="parcelas">Quantidade de Parcelas</label>
-                    <select required id="parcelas" style="width: 250px;">
+                    <select required id="parcelas" class="input-medio">
                         <option value="1">1x R$8.000,00 sem juros</option>
                         <option value="2">2x R$4.000,00 sem juros</option>
                         <option value="3">3x R$2.666,67 sem juros</option>
@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="reserva-botoes">
-                    <button type="button" onclick="history.back()" style="background-color: var(--neutra2);">Voltar</button>
+                    <button type="button" onclick="history.back()" class="botao-voltar">Voltar</button>
                     <button type="submit" onclick="if(event.ctrlKey) this.form.noValidate = true">Avançar</button>
                 </div>
             </form>
@@ -115,7 +115,7 @@
 
                 <hr>
 
-                <div class="icone-texto" style="justify-content: center; gap: 15px;">
+                <div class="resumo-box-periodo">
                     <img src="../../assets/img/icone-calendario.png" alt="Icone Calendario" width="25px">
                     <p>22 jun de 2026 - 28 de jun de 2026</p>
                 </div>

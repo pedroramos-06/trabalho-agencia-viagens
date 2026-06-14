@@ -55,7 +55,7 @@
 
                 <div class="campo">
                     <label for="destino">Destino</label>
-                    <select required id="destino" style="width: 265px;">
+                    <select required id="destino" class="input-medio">
                         <option value="italia">Italia</option>
                         <option value="italia2">Italia2</option>
                         <option value="italia3">Italia3</option>
@@ -65,7 +65,7 @@
 
                 <div class="campo">
                     <label for="pacote">Pacote</label>
-                    <select required id="pacote" style="width: 200px;">
+                    <select required id="pacote" class="input-medio">
                         <option value="">Selecione</option>
                         <option value="1">Básico</option>
                         <option value="2">Conforto</option>
@@ -80,18 +80,18 @@
 
                 <div class="campo">
                     <label for="data-ida">Data de Ida</label>
-                    <input required id="data-ida" type="date" style="width: 200px;">
+                    <input required id="data-ida" type="date" class="input-medio">
                 </div>
 
 
                 <div class="reserva-botoes">
-                    <button type="button" onclick="history.back()" style="background-color: var(--neutra2);">Voltar</button>
+                    <button type="button" onclick="history.back()" class="botao-voltar">Voltar</button>
                     <button type="submit" onclick="if(event.ctrlKey) this.form.noValidate = true /*Pula verificação dos campos*/">Avançar</button>
                 </div>
             </form>
 
             <div class="pacotes-container">
-                <div class="pacotes-box" style="background-color: var(--primaria2); border-bottom: 1px solid var(--neutra2);">
+                <div class="pacotes-box">
                     <p>Pacote</p>
                     <p>Hospedagem</p>
                     <p>Preço<br>(p/ pessoa)</p>
@@ -99,20 +99,20 @@
 
                 <div class="pacotes-box">
                     <p>Básico</p>
-                    <p style="font-weight: 500;">Albergue</p>
-                    <p style="font-weight: 500;">R$3.500,00</p>
+                    <p>Albergue</p>
+                    <p>R$3.500,00</p>
                 </div>
 
-                <div class="pacotes-box" style="background-color: var(--container2);">
+                <div class="pacotes-box">
                     <p>Conforto</p>
-                    <p style="font-weight: 500;">Hotel 3<br>estrelas</p>
-                    <p style="font-weight: 500;">R$5.000,00</p>
+                    <p>Hotel 3<br>estrelas</p>
+                    <p>R$5.000,00</p>
                 </div>
 
                 <div class="pacotes-box">
                     <p>Premium</p>
-                    <p style="font-weight: 500;">Resort</p>
-                    <p style="font-weight: 500;">R$7.500,00</p>
+                    <p>Resort</p>
+                    <p>R$7.500,00</p>
                 </div>
             </div>
         </div>

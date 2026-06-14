@@ -30,6 +30,10 @@
         margin-top: 100px;
     }
 
+    .botao-voltar {
+        background-color: var(--neutra2);
+    }
+
 
 
 /*Inputs*/
@@ -46,6 +50,14 @@
         padding-inline: 0px;
         text-align: center;
         width: 55px;
+    }
+
+    .input-medio {
+        width: 230px;
+    }
+
+    .input-grande {
+        width: 400px;
     }
 
 
@@ -116,10 +128,23 @@
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         align-items: center;
+        text-align: center;
+    }
+
+    .pacotes-box:nth-child(odd) {
+        background-color: var(--container2);
+    }
+    .pacotes-box:first-child {
+        background-color: var(--primaria2);
+        border-bottom: 1px solid var(--neutra2);
+    }
+    
+    .pacotes-box:first-child p,
+    .pacotes-box p:first-child {
+        font: var(--botao);
     }
     .pacotes-box p {
-        text-align: center;
-        font: var(--botao);
+        font: var(--label);
     }
 
 
@@ -140,6 +165,14 @@
     .resumo-container h2 {
         line-height: 1;
         color: black;
+    }
+
+    .resumo-box-periodo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
     }
 
     .resumo-box-imagem {
