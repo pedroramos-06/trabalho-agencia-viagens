@@ -1,0 +1,176 @@
+/* Nome do destino dentro do banner */
+.banner-titulo {
+    color: white;
+    position: absolute; 
+    top: 150px; 
+    left: 106px;
+    font-weight: 700;
+}
+
+h2 {
+    scroll-margin-top: 100px;
+}
+
+.secoes-container {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 50px;
+    background-color: var(--primaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.secoes-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.secoes-container div img {
+    width: 25px;
+    height: 25px;
+}
+
+.secoes-container.visible {
+    opacity: 0.9;
+    pointer-events: auto;
+}
+
+/* Barra de serviços oferecidos na viagem */
+
+.servicos-container {
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    border-radius: 24px;
+    background-color: var(--primaria2);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px 40px; 
+    flex-wrap: wrap;
+}
+
+.servicos-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 1 auto;
+}
+
+.servicos-container img {
+    width: 29px;
+    height: 29px;
+    object-fit: contain;
+}
+
+/* Cronograma */
+.cronograma-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 70px;
+}
+
+.cronograma-item {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 10px 25px;
+    align-items: start;
+}
+
+/* Elementos da timeline do cronograma */
+.timeline-ponto {
+    width: 24px;
+    height: 24px;
+    background-color: var(--primaria2);
+    border-radius: 50%;
+}
+
+.timeline-linha {
+    width: 7px;
+    height: 100%;
+    background-color: var(--neutra2);
+    border-radius: 20px;
+    justify-self: center;
+}
+
+/* Cards pocotes de viagens */
+.pacotes-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--neutra2);
+    border-radius: 38px;
+    overflow: hidden; 
+    padding: 0;
+    width: 270px;
+}
+
+.card-header {
+    background-color: var(--primaria2);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-header h2 {
+    color: black;
+}
+
+.card-content {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Galeria de fotos */
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.galeria-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/* Alternar fotos grandes e pequenas */
+.galeria-container img:nth-child(1),
+.galeria-container img:nth-child(3),
+.galeria-container img:nth-child(4) {
+    grid-row: span 2;
+}
+
+video {
+    width: 100%;
+    max-height: 600px;
+    height: auto;
+    border-radius: 25px;
+    object-fit: cover;
+}
