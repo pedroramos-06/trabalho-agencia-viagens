@@ -176,4 +176,5 @@ video {
     max-height: 700px;
     height: auto;
     border-radius: 25px;
+    object-fit: cover;
 }
