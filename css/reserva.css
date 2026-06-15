@@ -5,9 +5,9 @@
         align-items: center;
     }
     @media (max-width: 1550px) {
-    main {
-        padding-inline: 200px;
-    }
+        main {
+            padding-inline: 170px;
+        }
     }
     
     .reserva-content {
