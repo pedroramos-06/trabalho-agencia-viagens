@@ -112,38 +112,34 @@
 
 /*Pacotes*/
     .pacotes-container {
-        display: flex;
-        flex-direction: column;
+        table-layout: fixed;
+        border-spacing: 0;
         overflow: hidden;
         min-width: 480px;
-        height: 360px;
+        width: 480px;
+        align-self: flex-start;
         border-radius: 38px;
         border: 1px solid var(--neutra2);
         background-color: var(--container);
     }
 
-    .pacotes-box {
-        display: grid;
+    .pacotes-container tr {
         height: 90px;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        align-items: center;
         text-align: center;
     }
 
-    .pacotes-box:nth-child(odd) {
+    .pacotes-container tr:nth-child(odd) {
         background-color: var(--container2);
     }
-    .pacotes-box:first-child {
+    .pacotes-container tr:first-child {
         background-color: var(--primaria2);
         border-bottom: 1px solid var(--neutra2);
     }
     
-    .pacotes-box:first-child p,
-    .pacotes-box p:first-child {
+    th {
         font: var(--botao);
     }
-    .pacotes-box p {
+    td {
         font: var(--label);
     }
 
