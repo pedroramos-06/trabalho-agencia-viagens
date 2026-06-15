@@ -9,6 +9,11 @@
             padding-inline: 170px;
         }
     }
+
+    h2 {
+        width: 100%;
+        margin-block: -20px;
+    }
     
     .reserva-content {
         display: flex;
@@ -159,6 +164,7 @@
         background-color: var(--neutra);
     }
     .resumo-container h2 {
+        margin: auto;
         line-height: 1;
         color: black;
     }
