@@ -1,0 +1,211 @@
+/*Geral*/
+    main {
+        padding-inline: 300px;
+        align-items: center;
+    }
+    @media (max-width: 1550px) {
+        main {
+            padding-inline: 170px;
+        }
+    }
+
+    h2 {
+        width: 100%;
+        margin-block: -20px;
+    }
+    
+    .reserva-content {
+        display: flex;
+        width: 100%;
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    .reserva-form {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: 600px;
+    }
+
+    .reserva-botoes {
+        display: flex;
+        justify-content: start;
+        gap: 40px;
+        margin-top: auto;
+    }
+
+    .botao-voltar {
+        background-color: var(--neutra2);
+    }
+
+
+
+/*Inputs*/
+    input[type="number"] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
+    .input-pequeno {
+        padding-inline: 0px;
+        text-align: center;
+        width: 55px;
+    }
+
+    .input-medio {
+        width: 230px;
+    }
+
+    .input-grande {
+        width: 400px;
+    }
+
+
+
+/*Progresso*/
+    .progresso-container {
+        background-color: var(--container);
+        border-radius: 30px;
+        width: 964px;
+        height: 122px;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        padding-inline: 20px;
+        padding-block: 15px;
+    }
+    .progresso-container p {
+        font: var(--label);
+    }
+
+    .progresso-box {
+        background-color: none;
+        width: 192px;
+        height: 92px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .progresso-circulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 37px;
+        width: 37px;
+        border: 2px solid black;
+        border-radius: 32.33px;
+    }
+
+    .progresso-linha {
+        position: absolute;
+        top: 49px;
+        height: 2px;
+        background-color: black;
+        width: 208px;
+    }
+
+
+
+/*Pacotes*/
+    .pacotes-container {
+        table-layout: fixed;
+        border-spacing: 0;
+        overflow: hidden;
+        min-width: 480px;
+        width: 480px;
+        align-self: flex-start;
+        border-radius: 38px;
+        border: 1px solid var(--neutra2);
+        background-color: var(--container);
+    }
+
+    .pacotes-container tr {
+        height: 90px;
+        text-align: center;
+    }
+
+    .pacotes-container tr:nth-child(odd) {
+        background-color: var(--container2);
+    }
+    .pacotes-container tr:first-child {
+        background-color: var(--primaria2);
+        border-bottom: 1px solid var(--neutra2);
+    }
+    
+    th {
+        font: var(--botao);
+    }
+    td {
+        font: var(--label);
+    }
+
+
+
+/*Resumo*/
+    .resumo-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        min-width: 480px;
+        align-self: flex-start;
+        padding-inline: 25px;
+        padding-block: 15px;
+        border-radius: 38px;
+        border: 1px solid var(--neutra2);
+        background-color: var(--neutra);
+    }
+    .resumo-container h2 {
+        margin: auto;
+        line-height: 1;
+        color: black;
+    }
+
+    .resumo-box-periodo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .resumo-box-imagem {
+        display: flex;
+        height: 159px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .resumo-box-total {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .resumo-box-imagem div, .resumo-box-total div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+
+/*confirmar*/
+    .confirmar-container {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        gap: 15px;
+        padding-inline: 25px;
+        padding-block: 15px;
+        border-radius: 38px;
+        background-color: var(--container);
+        border: 1px solid var(--container2);
+    }

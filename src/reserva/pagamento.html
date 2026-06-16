@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/reserva.css">
+    <link rel="icon" href="../../assets/img/logo-primaria.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../../assets/img/logo.png" alt="Logo" width="60px"></a>
+                <a href="../index.html"><img src="../../assets/img/logo-nome.png" alt="Logo Nome" width="189px"></a>
+            </div>
+
+            <div class="nav-links">
+                <a href="../index.html">Destinos</a>
+                <a href="dados-viagem.html">Fazer Reserva</a>
+                <a href="../contato.html">Contato</a>
+                <a href="../sobre.html">Sobre</a>
+                <a href="../minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="progresso-container">
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>1</p></div>
+                <p>Dados da Viagem</p>
+            </div>
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>2</p></div>
+                <p>Dados Pessoais</p>
+            </div>
+            <div class="progresso-box" style="background-color: var(--container2);">
+                <div class="progresso-circulo"><p>3</p></div>
+                <p>Pagamento</p>
+            </div>
+            <div class="progresso-box">
+                <div class="progresso-circulo"><p>4</p></div>
+                <p>Confirmar</p>
+            </div>
+
+            <div class="progresso-linha" style="left: 134px;"></div>
+            <div class="progresso-linha" style="left: 378px;"></div>
+            <div class="progresso-linha" style="left: 622px;"></div>
+        </div>
+
+        <h2>Pagamento</h2>
+        <div class="reserva-content">
+            <form class="reserva-form" onsubmit="avancar(event)">
+
+                <div class="campo">
+                    <label for="nome-titular">Nome do Titular</label>
+                    <input required id="nome-titular" type="text" placeholder="Nome Completo" class="input-grande">
+                </div>
+
+                <div class="campo">
+                    <label for="cartao">Número do Cartão</label>
+                    <input required id="cartao" type="text" placeholder="Número do Cartão" class="input-medio">
+                </div>
+
+                <div style="display: flex; gap: 60px;">
+                    <div class="campo">
+                        <label for="mes">Validade</label>
+                        <div style="display: flex; gap: 5px;">
+                            <input required id="mes" class="input-pequeno" placeholder="Mês" type="number" min="1" max="12" oninput="this.value=this.value.substring(0,2)">
+                            <input required id="ano" class="input-pequeno" placeholder="Ano" type="number" oninput="this.value=this.value.substring(0,2)">
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cvv">Código de Segurança</label>
+                        <input required id="cvv" class="input-pequeno" type="text" placeholder="CVV" minlength="3" maxlength="3">
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="parcelas">Quantidade de Parcelas</label>
+                    <select required id="parcelas" class="input-medio">
+                        <option value="1">1x R$8.000,00 sem juros</option>
+                        <option value="2">2x R$4.000,00 sem juros</option>
+                        <option value="3">3x R$2.666,67 sem juros</option>
+                        <option value="4">4x R$2.000,00 sem juros</option>
+                        <option value="5">5x R$1.600,00 sem juros</option>
+                        <option value="6">6x R$1.333,33 sem juros</option>
+                        <option value="7">7x R$1.142,86 sem juros</option>
+                        <option value="8">8x R$1.000,00 sem juros</option>
+                        <option value="9">9x R$888,89 sem juros</option>
+                        <option value="10">10x R$800,00 sem juros</option>
+                    </select>
+                </div>
+
+                <div class="reserva-botoes">
+                    <button type="button" onclick="history.back()" class="botao-voltar">Voltar</button>
+                    <button type="submit" onclick="if(event.ctrlKey) this.form.noValidate = true">Avançar</button>
+                </div>
+            </form>
+            
+            <div class="resumo-container">
+                <h2>Resumo</h2>
+
+                <div class="resumo-box-imagem">
+                    <div>
+                        <p>Destino: Tailândia</p>
+                        <p>Qnt de pessoas: 2 adultos</p>
+                        <p>Pacote:  Premium</p>
+                    </div>
+
+                    <img src="../../assets/img/placeholder.png" alt="Imagem Destino" width="218px">
+                </div>
+
+                <hr>
+
+                <div class="resumo-box-periodo">
+                    <img src="../../assets/img/icone-calendario.png" alt="Icone Calendario" width="25px">
+                    <p>22 jun de 2026 - 28 de jun de 2026</p>
+                </div>
+
+                <hr>
+
+                <div class="resumo-box-total">
+                    <h3>Total a pagar</h3>
+
+                    <div>
+                        <h3>R$ 8.000,00</h3>
+                        <p>Em até 10x de R$800,00 s/<br>juros no cartão de crédito</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Contato</p>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/telefone.png" width="15px" alt="Icone Telefone">
+                <a href="tel:+553340028922">(33) 4002-8922</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/email.png" width="15px" alt="Icone Email">
+                <a href="mailto:destinocerto@gmail.com">destinocerto@gmail.com</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/web.png" width="15px" alt="Icone Web">
+                <a href="../contato.html">destinocerto.com</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Redes Sociais</p>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/facebook.png" width="15px" alt="Icone Facebook">
+                <a href="https://www.facebook.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/instagram.png" width="15px" alt="Icone Instagram">
+                <a href="https://www.instagram.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../../assets/img/icones-footer/youtube.png" width="15px" alt="Icone Youtube">
+                <a href="https://www.youtube.com/@destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Mapa do Site</p>
+            <div>
+                <a href="../index.html">Destinos</a>
+            </div>
+            <div>
+                <a href="dados-viagem.html">Fazer Reserva</a>
+            </div>
+            <div>
+                <a href="../minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('ano').min = new Date().getFullYear().toString().slice(-2)
+
+        function avancar(e) {
+            e.preventDefault();
+            window.location.href="confirmar.html";
+        }
+
+        document.getElementById("cartao").addEventListener("input", (e) => {
+            const cartao = e.target.value
+                .replace(/\D/g, "")
+                .substring(0, 16)
+                .replace(/(\d{4})(\d)/, "$1 $2")
+                .replace(/(\d{4})(\d)/, "$1 $2")
+                .replace(/(\d{4})(\d{1,4})/, "$1 $2");
+
+            e.target.value = cartao;
+
+            if(cartao.length < 19) {
+                e.target.setCustomValidity("Digite o número do cartão completo com os 16 dígitos");
+            } else {
+                e.target.setCustomValidity("");
+            }
+        });
+    </script>
+</body>
+</html>
