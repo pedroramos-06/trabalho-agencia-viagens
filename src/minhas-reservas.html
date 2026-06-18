@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Base</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../assets/img/logo-primaria.png">
+    <style>
+        .tabela-container {
+            display: none;
+            flex-direction: column;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .tabela-linha {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            padding: 12px 20px;
+            align-items: center;
+            text-align: center;
+            background-color: var(--container);
+        }
+        
+        .tabela-linha:not(.tabela-cabecalho):hover {
+            background-color: var(--container2);
+        }
+
+        .tabela-cabecalho {
+            background-color: var(--primaria);
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .tabela-linha span {
+            font-size: 16px;
+            color: var(--footer);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .sem-reservas{
+            text-align: center;
+            color: var(--neutra2);
+            font-size: 18px;
+            padding: 40px;
+        }
+
+        .status {
+            border-radius: 20px;
+            padding: 6px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+            align-items: center;
+            text-align: center;
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+        }
+
+        .status-pendente   { 
+            background-color: #F0E14A;
+        }
+       
+        .status-confirmada { 
+            background-color: #4CAF50; 
+        }
+        
+        .status-concluida  { 
+            background-color: var(--primaria); 
+        }
+
+        .status-cancelada  { 
+            background-color: #ff0303; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html"><img src="../assets/img/logo.png" alt="Logo" width="60px"></a>
+                <a href="index.html"><img src="../assets/img/logo-nome.png" alt="Logo Nome" width="189px"></a>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Destinos</a>
+                <a href="reserva/dados-viagem.html">Fazer Reserva</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </nav>
+    </header>
+   <main>
+    <h2>Minhas Reservas</h2>
+
+    
+    <!-- <p class="sem-reservas">Você não possui reservas ainda.</p> -->
+
+    <div class="tabela-container" style="display: flex;">
+
+        <div class="tabela-linha tabela-cabecalho">
+            <span>Destino</span>
+            <span>Status</span>
+            <span>Pacote</span>
+            <span>Data de Ida/Volta</span>
+            <span>Valor Total</span>
+        </div>
+
+        <div class="tabela-linha">
+            <span>Itália</span>
+            <span><div class="status status-confirmada">Confirmada</div></span>
+            <span>Conforto</span>
+            <span>27/05/2026 / 26/05/2026</span>
+            <span>R$ 5.000,00</span>
+        </div>
+
+        <div class="tabela-linha">
+            <span>Estados Unidos</span>
+            <span><div class="status status-pendente">Pagamento pendente</div></span>
+            <span>Econômico</span>
+            <span>10/08/2026 / 20/08/2026</span>
+            <span>R$ 8.000,00</span>
+        </div>
+
+        <div class="tabela-linha">
+            <span>Paris</span>
+            <span><div class="status status-concluida">Concluída</div></span>
+            <span>Luxo</span>
+            <span>01/01/2026 / 10/01/2026</span>
+            <span>R$ 12.000,00</span>
+        </div>
+
+        <div class="tabela-linha">
+            <span>Argentina</span>
+            <span><div class="status status-cancelada">Cancelada</div></span>
+            <span>Conforto</span>
+            <span>05/03/2026 / 15/03/2026</span>
+            <span>R$ 3.000,00</span>
+        </div>
+
+    </div>
+</main>
+    <footer>
+        <div>
+            <p>Contato</p>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/telefone.png" width="15px" alt="Icone Telefone">
+                <a href="tel:+553340028922">(33) 4002-8922</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/email.png" width="15px" alt="Icone Email">
+                <a href="mailto:destinocerto@gmail.com">destinocerto@gmail.com</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/web.png" width="15px" alt="Icone Web">
+                <a href="contato.html">destinocerto.com</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Redes Sociais</p>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/facebook.png" width="15px" alt="Icone Facebook">
+                <a href="https://www.facebook.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/instagram.png" width="15px" alt="Icone Instagram">
+                <a href="https://www.instagram.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/youtube.png" width="15px" alt="Icone Youtube">
+                <a href="https://www.youtube.com/@destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Mapa do Site</p>
+            <div>
+                <a href="index.html">Destinos</a>
+            </div>
+            <div>
+                <a href="reserva/dados-viagem.html">Fazer Reserva</a>
+            </div>
+            <div>
+                <a href="minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
