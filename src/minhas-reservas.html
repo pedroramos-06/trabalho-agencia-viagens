@@ -8,16 +8,17 @@
     <link rel="icon" href="../assets/img/logo-primaria.png">
     <style>
         .tabela-container {
-            display: none;
+            display: flex;
             flex-direction: column;
             border-radius: 10px;
             overflow: hidden;
+            font: var(--label);
         }
 
         .tabela-linha {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            padding: 12px 20px;
+            padding: 12px 50px;
             align-items: center;
             text-align: center;
             background-color: var(--container);
@@ -30,35 +31,25 @@
         .tabela-cabecalho {
             background-color: var(--primaria);
             color: white;
-            font-weight: 600;
-            font-size: 16px;
             border-radius: 10px 10px 0 0;
         }
 
         .tabela-linha span {
-            font-size: 16px;
-            color: var(--footer);
             align-items: center;
             justify-content: center;
             display: flex;
         }
 
-        .sem-reservas{
-            text-align: center;
-            color: var(--neutra2);
-            font-size: 18px;
-            padding: 40px;
+        .tabela-linha span:first-child {
+            justify-content: start;
         }
 
         .status {
             border-radius: 20px;
             padding: 6px 16px;
-            font-size: 14px;
-            font-weight: 600;
-            color: white;
             align-items: center;
             text-align: center;
-            width: fit-content;
+            width: 100%;
             display: flex;
             justify-content: center;
         }
@@ -76,7 +67,7 @@
         }
 
         .status-cancelada  { 
-            background-color: #ff0303; 
+            background-color: #fc5050;
         }
     </style>
 </head>
@@ -97,56 +88,53 @@
             </div>
         </nav>
     </header>
-   <main>
-    <h2>Minhas Reservas</h2>
+    <main>
+        <h1>Minhas Reservas</h1>
 
-    
-    <!-- <p class="sem-reservas">Você não possui reservas ainda.</p> -->
+        <div class="tabela-container">
 
-    <div class="tabela-container" style="display: flex;">
+            <div class="tabela-linha tabela-cabecalho">
+                <span>Destino</span>
+                <span>Status</span>
+                <span>Pacote</span>
+                <span>Data de Ida/Volta</span>
+                <span>Valor Total</span>
+            </div>
 
-        <div class="tabela-linha tabela-cabecalho">
-            <span>Destino</span>
-            <span>Status</span>
-            <span>Pacote</span>
-            <span>Data de Ida/Volta</span>
-            <span>Valor Total</span>
+            <div class="tabela-linha">
+                <span>Itália</span>
+                <span class="status status-confirmada">Confirmada</span>
+                <span>Conforto</span>
+                <span>27/05/2026 -> 26/05/2026</span>
+                <span>R$ 5.000,00</span>
+            </div>
+
+            <div class="tabela-linha">
+                <span>Estados Unidos</span>
+                <span class="status status-pendente">Pagamento pendente</span>
+                <span>Econômico</span>
+                <span>10/08/2026 -> 20/08/2026</span>
+                <span>R$ 8.000,00</span>
+            </div>
+
+            <div class="tabela-linha">
+                <span>Paris</span>
+                <span class="status status-concluida">Concluída</span>
+                <span>Luxo</span>
+                <span>01/01/2026 -> 10/01/2026</span>
+                <span>R$ 12.000,00</span>
+            </div>
+
+            <div class="tabela-linha">
+                <span>Argentina</span>
+                <span class="status status-cancelada">Cancelada</span>
+                <span>Conforto</span>
+                <span>05/03/2026 -> 15/03/2026</span>
+                <span>R$ 3.000,00</span>
+            </div>
+
         </div>
-
-        <div class="tabela-linha">
-            <span>Itália</span>
-            <span><div class="status status-confirmada">Confirmada</div></span>
-            <span>Conforto</span>
-            <span>27/05/2026 / 26/05/2026</span>
-            <span>R$ 5.000,00</span>
-        </div>
-
-        <div class="tabela-linha">
-            <span>Estados Unidos</span>
-            <span><div class="status status-pendente">Pagamento pendente</div></span>
-            <span>Econômico</span>
-            <span>10/08/2026 / 20/08/2026</span>
-            <span>R$ 8.000,00</span>
-        </div>
-
-        <div class="tabela-linha">
-            <span>Paris</span>
-            <span><div class="status status-concluida">Concluída</div></span>
-            <span>Luxo</span>
-            <span>01/01/2026 / 10/01/2026</span>
-            <span>R$ 12.000,00</span>
-        </div>
-
-        <div class="tabela-linha">
-            <span>Argentina</span>
-            <span><div class="status status-cancelada">Cancelada</div></span>
-            <span>Conforto</span>
-            <span>05/03/2026 / 15/03/2026</span>
-            <span>R$ 3.000,00</span>
-        </div>
-
-    </div>
-</main>
+    </main>
     <footer>
         <div>
             <p>Contato</p>
