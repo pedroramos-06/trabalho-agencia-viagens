@@ -183,6 +183,11 @@
         justify-content: space-between;
         align-items: center;
     }
+    .resumo-box-imagem img {
+        height: 100%;
+        width: 218px;
+        border-radius: 22px;
+    }
 
     .resumo-box-total {
         display: flex;
