@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../assets/img/logo-primaria.png">
+    <style>
+        .banner-overlay {
+            position: absolute;
+            left: 50%;
+            top: 350px;
+            text-align: right;
+        }
+
+        .banner-overlay h1{
+            color: white;
+            font-size: clamp(28px, 4vw, 64px);
+            font-weight: 800;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        .banner-overlay h3 {
+            color: white;
+            font-size: clamp(24px, 1.5vw, 28px);
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .destinos {
+            margin-top: 10px;
+            padding-bottom: 80px;
+        }
+
+        .destinos h2 {
+            margin-bottom: 40px;
+            margin-right: 10%;
+        }
+
+        .grid-destinos {
+            display: grid;
+            grid-template-columns: repeat(3, 310px);
+            justify-content: center;
+            gap: 75px 100px
+        }
+
+        .card-destino {
+            width: 310px;
+            height: 440px;
+            background: white;
+            border: 1px solid #d9d9d9;
+            border-radius: 38px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+            padding-bottom: 14px;
+        }
+
+        .card-destino img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px 12px 0;
+            text-align: center;
+        }
+
+        .titulo-card {
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .titulo-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--footer);
+            white-space: nowrap;
+        }
+
+        .tempo {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 15px;
+        }
+
+        .tempo img{
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .card-body small {
+            display: block;
+            font-size: 15px;
+            margin-bottom: 2px;
+        }
+
+        .card-body strong {
+            display: block;
+            color: var(--footer);
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html"><img src="../assets/img/logo.png" alt="Logo" width="60px"></a>
+                <a href="index.html"><img src="../assets/img/logo-nome.png" alt="Logo Nome" width="189px"></a>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Destinos</a>
+                <a href="reserva/dados-viagem.html">Fazer Reserva</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <img class="banner" src="../assets/img/banner.png" alt="Banner">
+
+        <div class="banner-overlay">
+            <h1>VIVA O SEU MELHOR!</h1>
+            <h3>NO DESTINO CERTO</h3>
+        </div>
+
+
+        <h1>Nossos destinos</h1>
+        <section class="destinos">
+
+            <div class="grid-destinos">
+
+                <div class="card-destino">
+                    <img src="../assets/img/italia/capa.jpg" alt="Italia">
+
+                    <div class="card-body">
+
+                        <div class="titulo-card">
+                            <h3>Itália</h3>
+
+                            <div class="tempo">
+                                <img src="../assets/img/icones/icone-calendario.png" alt="Calendário">
+                                <span>6 dias</span>
+                            </div>
+                        </div>
+
+                        <small>A partir de</small>
+
+                        <strong>R$ 3.500,00</strong>
+
+                        <button onclick="window.location.href='detalhe-destino/italia.html'">Saiba mais</button>
+                    </div>
+                </div>
+
+                <div class="card-destino">
+                    <img src="../assets/img/tailandia/capa.jpg" alt="Tailândia">
+
+                    <div class="card-body">
+
+                        <div class="titulo-card">
+                            <h3>Tailândia</h3>
+
+                            <div class="tempo">
+                                <img src="../assets/img/icones/icone-calendario.png" alt="Calendário">
+                                <span>6 dias</span>
+                            </div>
+                        </div>
+
+                        <small>A partir de</small>
+
+                        <strong>R$ 3.200,00</strong>
+
+                        <button onclick="window.location.href='detalhe-destino/tailandia.html'">Saiba mais</button>
+                    </div>
+                </div>
+
+                <div class="card-destino">
+                    <img src="../assets/img/peru/capa.jpg" alt="Peru">
+
+                    <div class="card-body">
+
+                        <div class="titulo-card">
+                            <h3>Peru</h3>
+
+                            <div class="tempo">
+                                <img src="../assets/img/icones/icone-calendario.png" alt="Calendário">
+                                <span>6 dias</span>
+                            </div>
+                        </div>
+
+                        <small>A partir de</small>
+
+                        <strong>R$ 4.200,00</strong>
+
+                        <button onclick="window.location.href='detalhe-destino/peru.html'">Saiba mais</button>
+                    </div>
+                </div>
+
+                <div class="card-destino">
+                    <img src="../assets/img/mexico/capa.jpg" alt="México">
+
+                    <div class="card-body">
+
+                        <div class="titulo-card">
+                            <h3>México</h3>
+
+                            <div class="tempo">
+                                <img src="../assets/img/icones/icone-calendario.png" alt="Calendário">
+                                <span>6 dias</span>
+                            </div>
+                        </div>
+
+                        <small>A partir de</small>
+
+                        <strong>R$ 4.200,00</strong>
+
+                        <button onclick="window.location.href='detalhe-destino/mexico.html'">Saiba mais</button>
+                    </div>
+                </div>
+
+                <div class="card-destino">
+                    <img src="../assets/img/bonito/capa.jpg" alt="Bonito">
+
+                    <div class="card-body">
+
+                        <div class="titulo-card">
+                            <h3>Bonito</h3>
+
+                            <div class="tempo">
+                                <img src="../assets/img/icones/icone-calendario.png" alt="Calendário">
+                                <span>6 dias</span>
+                            </div>
+                        </div>
+
+                        <small>A partir de</small>
+
+                        <strong>R$ 2.800,00</strong>
+
+                        <button onclick="window.location.href='detalhe-destino/bonito.html'">Saiba mais</button>
+
+                    </div>
+                </div>
+
+                <div class="card-destino">
+                    <img src="../assets/img/salvador/capa.jpg" alt="Salvador">
+
+                    <div class="card-body">
+
+                        <div class="titulo-card">
+                            <h3>Bahia - Salvador</h3>
+
+                            <div class="tempo">
+                                <img src="../assets/img/icones/icone-calendario.png" alt="Calendário">
+                                <span>4 dias</span>
+                            </div>
+                        </div>
+
+                        <small>A partir de</small>
+
+                        <strong>R$ 1.500,00</strong>
+
+                        <button onclick="window.location.href='detalhe-destino/salvador.html'">Saiba mais</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Contato</p>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/telefone.png" width="15px" alt="Icone Telefone">
+                <a href="tel:+553340028922">(33) 4002-8922</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/email.png" width="15px" alt="Icone Email">
+                <a href="mailto:destinocerto@gmail.com">destinocerto@gmail.com</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/web.png" width="15px" alt="Icone Web">
+                <a href="contato.html">destinocerto.com</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Redes Sociais</p>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/facebook.png" width="15px" alt="Icone Facebook">
+                <a href="https://www.facebook.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/instagram.png" width="15px" alt="Icone Instagram">
+                <a href="https://www.instagram.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/youtube.png" width="15px" alt="Icone Youtube">
+                <a href="https://www.youtube.com/@destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Mapa do Site</p>
+            <div>
+                <a href="index.html">Destinos</a>
+            </div>
+            <div>
+                <a href="reserva/dados-viagem.html">Fazer Reserva</a>
+            </div>
+            <div>
+                <a href="minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
