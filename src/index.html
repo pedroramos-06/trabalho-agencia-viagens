@@ -3,20 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Base</title>
+    <title>Destinos</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../assets/img/logo-primaria.png">
-    
     <style>
-        .banner-container {
-            position: relative;
-            width: 100%;
-        }
-
         .banner-overlay {
             position: absolute;
             left: 50%;
-            bottom: 100px;
+            top: 350px;
             text-align: right;
         }
 
@@ -49,15 +43,15 @@
             display: grid;
             grid-template-columns: repeat(3, 310px);
             justify-content: center;
-            gap: 45px 80px
+            gap: 75px 100px
         }
 
         .card-destino {
             width: 310px;
-            height: 400px;
+            height: 440px;
             background: white;
             border: 1px solid #d9d9d9;
-            border-radius: 18px;
+            border-radius: 38px;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
             padding-bottom: 14px;
@@ -70,7 +64,7 @@
         }
 
         .card-body {
-            padding: 10px 12px 0;
+            padding: 20px 12px 0;
             text-align: center;
         }
 
@@ -78,7 +72,7 @@
             display: flex;
             justify-content:space-around;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .titulo-card h3 {
@@ -93,19 +87,17 @@
             align-items: center;
             gap: 4px;
             font-size: 15px;
-            color: #555;
         }
 
         .tempo img{
-            width: 14px;
-            height: 14px;
+            width: 20px;
+            height: 20px;
             object-fit: contain;
         }
 
         .card-body small {
             display: block;
             font-size: 15px;
-            color: #777;
             margin-bottom: 2px;
         }
 
@@ -114,29 +106,8 @@
             color: var(--footer);
             font-size: 20px;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
-
-        .card-body button {
-            width: 210px;
-            height: 30px;
-            font-size: 15px;
-            font-weight: 600;
-            border-radius: 12px;
-        }
-
-        @media (max-width: 1200px) {
-            .grid-destinos {
-                grid-template-columns: repeat(2, 310px);
-            }
-        }
-
-        @media (max-width: 700px) {
-            .grid-destinos {
-                grid-template-columns: 310px;
-            }
-
-    }
     </style>
 
 </head>
@@ -157,19 +128,17 @@
             </div>
         </nav>
     </header>
-    <main style="position: relative;">
-        
+    <main>
         <img class="banner" src="../assets/img/banner.png" alt="Banner">
-        <div class="banner-container">
-            <div class="banner-overlay">
-                <h1>VIVA O SEU MELHOR!</h1>
-                <h3>NO DESTINO CERTO</h3>
-            </div>
+
+        <div class="banner-overlay">
+            <h1>VIVA O SEU MELHOR!</h1>
+            <h3>NO DESTINO CERTO</h3>
         </div>
 
-        <section class="destinos">
 
-            <h2>Nossos destinos</h2>
+        <h1>Nossos destinos</h1>
+        <section class="destinos">
 
             <div class="grid-destinos">
 
@@ -191,10 +160,7 @@
 
                         <strong>R$ 3.500,00</strong>
 
-                        <a href="detalhe-destino/italia.html">
-                            <button>Saiba mais</button>
-                        </a>
-
+                        <button onclick="window.location.href='detalhe-destino/italia.html'">Saiba mais</button>
                     </div>
                 </div>
 
@@ -216,10 +182,7 @@
 
                         <strong>R$ 3.200,00</strong>
 
-                        <a href="detalhe-destino/tailandia.html">
-                            <button>Saiba mais</button>
-                        </a>
-
+                        <button onclick="window.location.href='detalhe-destino/tailandia.html'">Saiba mais</button>
                     </div>
                 </div>
 
@@ -241,10 +204,7 @@
 
                         <strong>R$ 4.200,00</strong>
 
-                        <a href="detalhe-destino/peru.html">
-                            <button>Saiba mais</button>
-                        </a>
-
+                        <button onclick="window.location.href='detalhe-destino/peru.html'">Saiba mais</button>
                     </div>
                 </div>
 
@@ -266,10 +226,7 @@
 
                         <strong>R$ 4.200,00</strong>
 
-                        <a href="detalhe-destino/mexico.html">
-                            <button>Saiba mais</button>
-                        </a>
-
+                        <button onclick="window.location.href='detalhe-destino/mexico.html'">Saiba mais</button>
                     </div>
                 </div>
 
@@ -291,9 +248,7 @@
 
                         <strong>R$ 2.800,00</strong>
 
-                        <a href="detalhe-destino/bonito.html">
-                            <button>Saiba mais</button>
-                        </a>
+                        <button onclick="window.location.href='detalhe-destino/bonito.html'">Saiba mais</button>
 
                     </div>
                 </div>
@@ -316,9 +271,7 @@
 
                         <strong>R$ 1.500,00</strong>
 
-                        <a href="detalhe-destino/salvador.html">
-                            <button>Saiba mais</button>
-                        </a>
+                        <button onclick="window.location.href='detalhe-destino/salvador.html'">Saiba mais</button>
 
                     </div>
                 </div>
@@ -328,7 +281,6 @@
         </section>
 
     </main>
-    
     <footer>
         <div>
             <p>Contato</p>
