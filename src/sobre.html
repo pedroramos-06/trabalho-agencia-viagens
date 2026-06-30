@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../assets/img/logo-primaria.png">
+    <style>
+        .sobre-logo {
+            background-color: var(--primaria);
+            border-radius: 25px;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .logo-principal img{
+            width: 122px;
+            height: 111px;
+        } 
+
+        .logo-nome img {
+            width: 310px;
+            height: 31px;
+        }
+
+        .valores-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 10px;
+        }
+
+        .valor-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            text-align: center;
+        }
+
+        .valor-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .valor-card p {
+            font: var(--label);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html"><img src="../assets/img/logo.png" alt="Logo" width="60px"></a>
+                <a href="index.html"><img src="../assets/img/logo-nome.png" alt="Logo Nome" width="189px"></a>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Destinos</a>
+                <a href="reserva/dados-viagem.html">Fazer Reserva</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Sobre nós</h1>
+
+        <div class="sobre-logo">
+            <img class="logo-principal"src="../assets/img/logo.png" alt="Logo Destino">
+            <img class="logo-nome"src="../assets/img/logo-nome.png" alt="Nome Destino">
+
+        </div>
+        
+        <h2>Nossa História</h2>
+        <p>A Destino Certo surgiu da vontade de transformar o jeito como as pessoas planejam suas viagens. Percebemos que muitos viajantes enfrentavam dúvidas, insegurança e dificuldade para organizar todos os detalhes antes de viajar. 
+            Assim nasceu a ideia de criar uma agência que unisse tecnologia, praticidade e atendimento humanizado.<br> 
+            Desde então, nosso compromisso é acompanhar cada cliente desde a escolha do destino até o momento do embarque, oferecendo suporte, confiança e a certeza de que cada viagem começa muito antes de chegar ao destino.</p>
+
+        <h2>Nossa Missão</h2>
+        <p>Tornar cada viagem uma experiência tranquila desde o primeiro planejamento! Trabalhamos para oferecer soluções que unem praticidade, segurança e atendimento de qualidade, permitindo que nossos clientes se preocupem apenas com o que realmente importa: aproveitar cada momento da viagem.</p>
+
+        <h2>Nossos Valores</h2>
+        <div class="valores-grid">
+            <div class="valor-card">
+                <img src="../assets/img/icones/qualidade.png" alt="Excelência e Qualidade">
+                <p>Excelência e Qualidade</p>
+            </div>
+            <div class="valor-card">
+                <img src="../assets/img/icones/seguranca.png" alt="Segurança e Confiança">
+                <p>Segurança e Confiança</p>
+            </div>
+            <div class="valor-card">
+                <img src="../assets/img/icones/aviao_colorido.png" alt="Experiências Inesquecíveis">
+                <p>Experiências Inesquecíveis</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Contato</p>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/telefone.png" width="15px" alt="Icone Telefone">
+                <a href="tel:+553340028922">(33) 4002-8922</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/email.png" width="15px" alt="Icone Email">
+                <a href="mailto:destinocerto@gmail.com">destinocerto@gmail.com</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/web.png" width="15px" alt="Icone Web">
+                <a href="contato.html">destinocerto.com</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Redes Sociais</p>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/facebook.png" width="15px" alt="Icone Facebook">
+                <a href="https://www.facebook.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/instagram.png" width="15px" alt="Icone Instagram">
+                <a href="https://www.instagram.com/destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+            <div class="icone-texto">
+                <img src="../assets/img/icones-footer/youtube.png" width="15px" alt="Icone Youtube">
+                <a href="https://www.youtube.com/@destinocerto_oficial" target="_blank">Destino Certo</a>
+            </div>
+        </div>
+
+        <div>
+            <p>Mapa do Site</p>
+            <div>
+                <a href="index.html">Destinos</a>
+            </div>
+            <div>
+                <a href="reserva/dados-viagem.html">Fazer Reserva</a>
+            </div>
+            <div>
+                <a href="minhas-reservas.html">Minhas Reservas</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
