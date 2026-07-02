@@ -125,8 +125,24 @@ h2 {
     width: 270px;
 }
 
-.card-header {
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.pacote-basico{
+    background-color: #C4C4C4;
+}
+
+.pacote-conforto{
+    background-color: #FFD700;
+}
+
+.pacote-premium{
     background-color: var(--primaria2);
+}
+
+.card-header {
     height: 90px;
     display: flex;
     align-items: center;
