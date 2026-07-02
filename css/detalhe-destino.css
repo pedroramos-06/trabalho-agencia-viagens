@@ -123,10 +123,27 @@ h2 {
     overflow: hidden; 
     padding: 0;
     width: 270px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.pacote-basico{
+    background-color: #C4C4C4;
+}
+
+.pacote-conforto{
+    background-color: #FFD700;
+}
+
+.pacote-premium{
+    background-color: var(--primaria2);
 }
 
 .card-header {
-    background-color: var(--primaria2);
     height: 90px;
     display: flex;
     align-items: center;
